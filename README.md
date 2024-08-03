@@ -58,6 +58,12 @@ This repository contains two web scraping projects:
 
 3. The scraped table will be saved as a CSV file in the `output` directory.
 
+#### Configuration
+
+- `scrape_wikipedia.py` script takes the following command-line arguments:
+  - `target`: The type of data to retrieved used to access different functions of the script.
+  - `url`: The URL of the Wikipedia page.
+  - `output`: The name of the file to be saved in.
 
 
 ### Reviews Data Scraper
