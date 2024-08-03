@@ -58,13 +58,6 @@ This repository contains two web scraping projects:
 
 3. The scraped table will be saved as a CSV file in the `output` directory.
 
-#### Configuration
-
-- `scrape_wikipedia.py` script takes the following command-line arguments:
-  - `url`: The URL of the Wikipedia page.
-  - `table_index`: The index of the table to scrape (0 for the first table, 1 for the second, etc.).
-
-
 
 
 ### Reviews Data Scraper
@@ -80,10 +73,7 @@ This repository contains two web scraping projects:
     ```bash
     pip install -r requirements.txt
     ```
-#### Configuration
 
-- `scrape_reviews.py` script takes the following command-line arguments:
-  - `query`: The search query for the products you want to scrape.
 
 
 
