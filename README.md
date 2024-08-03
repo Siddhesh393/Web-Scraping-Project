@@ -2,7 +2,7 @@
 
 This repository contains two web scraping projects:
 1. **Wikipedia Table Scraper**
-2. **Amazon Data Scraper**
+2. **Reviews Data Scraper**
 
 ## Features
 
@@ -12,10 +12,10 @@ This repository contains two web scraping projects:
 - Save extracted data to CSV or JSON files.
 - Handle tables with varying structures and complexities.
 
-### Amazon Data Scraper
+### Review Data Scraper
 
 - Extract product details such as name, price, rating, and number of reviews.
-- Save extracted data to CSV or JSON files.
+- Save extracted data to CSV file.
 - Handle pagination to scrape multiple pages of search results.
 
 ## Requirements
@@ -30,8 +30,8 @@ This repository contains two web scraping projects:
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/yourusername/web-scraping-projects.git
-    cd web-scraping-projects
+    git clone https://github.com/Siddhesh393/Web-Scraping-Project.git
+    cd Web-Scraping-Project
     ```
 
 2. Install the required Python packages:
@@ -44,13 +44,19 @@ This repository contains two web scraping projects:
 
 ### Wikipedia Table Scraper
 
-1. To scrape a table from a Wikipedia page, run the script with the page URL and table index as arguments:
+1. Navigate to the `Wiki_Scraper` directory:
 
     ```bash
-    python scrape_wikipedia.py "https://en.wikipedia.org/wiki/Example_Page" 0
+    cd Wiki_Scraper
     ```
 
-2. The scraped table will be saved as a CSV file in the `output` directory.
+2. To scrape a table from a Wikipedia page, run the script with the page URL and table index as arguments:
+
+    ```bash
+    python scrape_wikipedia.py "https://en.wikipedia.org/wiki/Khabib_Nurmagomedov" 0
+    ```
+
+3. The scraped table will be saved as a CSV file in the `output` directory.
 
 #### Configuration
 
@@ -60,7 +66,63 @@ This repository contains two web scraping projects:
 
 #### Example
 
-To scrape the first table from the Wikipedia page on "Python (programming language)":
+To scrape the first table from the Wikipedia page on "Khabib Nurmagomedov":
 
 ```bash
-python scrape_wikipedia.py "https://en.wikipedia.org/wiki/Python_(programming_language)" 0
+python scrape_wikipedia.py "https://en.wikipedia.org/wiki/Khabib_Nurmagomedov" 0
+
+
+
+### Reviews Data Scraper
+
+This project is a web scraper designed to extract product data from Ecommerce Website, including product names, prices, ratings, and reviews.
+
+#### Features
+
+- Extract product details such as name, price, rating, and number of reviews.
+- Save extracted data to CSV or JSON files.
+- Handle pagination to scrape multiple pages of search results.
+
+#### Requirements
+
+- Python 3.x
+- BeautifulSoup4
+- requests
+- pandas
+
+#### Installation
+
+1. Navigate to the `Reviews_Scraper` directory within the repository:
+
+    ```bash
+    cd Reviews_Scraper
+    ```
+
+2. Install the required Python packages:
+
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+#### Usage
+
+1. To scrape product data from Ecommerce Website, run the script:
+
+    ```bash
+    python scrape_reviews.py
+    ```
+
+2. The scraped data will be saved as a CSV file in the `output` directory.
+
+#### Configuration
+
+- `scrape_reviews.py` script takes the following command-line arguments:
+  - `query`: The search query for the products you want to scrape.
+
+#### Example
+
+To scrape data for keyboards from Reviews:
+
+```bash
+python scrape_reviews.py "keyboards"
+
