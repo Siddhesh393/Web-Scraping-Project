@@ -64,12 +64,6 @@ This repository contains two web scraping projects:
   - `url`: The URL of the Wikipedia page.
   - `table_index`: The index of the table to scrape (0 for the first table, 1 for the second, etc.).
 
-#### Example
-
-To scrape the first table from the Wikipedia page on "Khabib Nurmagomedov":
-
-```bash
-python scrape_wikipedia.py "https://en.wikipedia.org/wiki/Khabib_Nurmagomedov" 0
 
 
 
@@ -119,10 +113,5 @@ This project is a web scraper designed to extract product data from Ecommerce We
 - `scrape_reviews.py` script takes the following command-line arguments:
   - `query`: The search query for the products you want to scrape.
 
-#### Example
 
-To scrape data for keyboards from Reviews:
-
-```bash
-python scrape_reviews.py "keyboards"
 
