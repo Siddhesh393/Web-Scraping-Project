@@ -69,23 +69,6 @@ This repository contains two web scraping projects:
 
 ### Reviews Data Scraper
 
-This project is a web scraper designed to extract product data from Ecommerce Website, including product names, prices, ratings, and reviews.
-
-#### Features
-
-- Extract product details such as name, price, rating, and number of reviews.
-- Save extracted data to CSV or JSON files.
-- Handle pagination to scrape multiple pages of search results.
-
-#### Requirements
-
-- Python 3.x
-- BeautifulSoup4
-- requests
-- pandas
-
-#### Installation
-
 1. Navigate to the `Reviews_Scraper` directory within the repository:
 
     ```bash
@@ -97,17 +80,6 @@ This project is a web scraper designed to extract product data from Ecommerce We
     ```bash
     pip install -r requirements.txt
     ```
-
-#### Usage
-
-1. To scrape product data from Ecommerce Website, run the script:
-
-    ```bash
-    python scrape_reviews.py
-    ```
-
-2. The scraped data will be saved as a CSV file in the `output` directory.
-
 #### Configuration
 
 - `scrape_reviews.py` script takes the following command-line arguments:
